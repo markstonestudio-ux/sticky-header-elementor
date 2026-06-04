@@ -1,0 +1,17 @@
+/* Sticky Header for Elementor */
+[data-she="1"] {
+  transform-origin: top center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+[data-she="1"].she-sticky-active {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+[data-she="1"].she-hidden { pointer-events: none !important; }
+.she-placeholder { display: block !important; pointer-events: none !important; visibility: hidden !important; }
+.elementor-editor-active [data-she="1"] { position: relative !important; transform: none !important; opacity: 1 !important; }
+.elementor-editor-active .she-placeholder { display: none !important; }
